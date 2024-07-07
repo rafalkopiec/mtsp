@@ -1,2 +1,30 @@
-# MTSP
- 
+## .mtsp
+### Metaspace hosting standard
+The open standard for the three-dimensional web.
+<br>
+By default, a regular web browser navigates to the `index.html` of a website.
+<br>
+A metaspace browser instead responds to the `index.mtsp` if available.
+
+### Sample `.mtsp` file
+Below is an example `index.mtsp` file, generally to be hosted alongside an `index.html`.
+
+```
+#METASPACE_HOST
+#METASPACE_VERSION:1
+#METASPACE_NAME:"Untitled"
+#METASPACE_PREVIEW_PATH:"preview.jpg"
+#METASPACE_3D_PATH:"file.usdz"
+```
+
+### Content definitions
+
+`#METASPACE_HOST` - must be present
+
+`#METASPACE_VERSION `- mtsp version number
+
+`#METASPACE_NAME` - name of experience (user-friendly)
+
+`#METASPACE_PREVIEW_PATH` - relative path to image preview
+
+`#METASPACE_3D_PATH` - relative path to 3D file
