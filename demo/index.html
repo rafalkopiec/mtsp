@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>
+            Metaspace hosting standard
+        </title>
+        <style>
+            .subtitle {
+                color: #525252;
+                font-family: verdana;
+            }
+            .bodytext {
+                font-family: verdana;
+            }
+            .code {
+                font-family: courier;
+            }
+            .box {
+                display: flex;
+                justify-content: center;
+            }
+            .pad {
+                padding: 5%;
+            }
+            .padborder {
+                padding-left: 1rem;
+                border-left-color: #525252;
+                border-left-style: solid;
+                border-left-width: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="pad">
+                <h2 class="subtitle">
+                    .mtsp
+                </h2>
+                </br>
+                </br>
+                <h3 class="subtitle">
+                    Metaspace hosting standard
+                </h3>
+                <p class="bodytext">
+                    The open standard for the three-dimensional web.
+                    <br>
+                    By default, a regular web browser navigates to the <code class="code">index.html</code> of a website.
+                    <br>
+                    A metaspace browser instead responds to the <code class="code">index.mtsp</code> if available.
+                </p>
+                </br>
+                </br>
+                <h3 class="subtitle">
+                    Sample index.mtsp file
+                </h3>
+                <p class="bodytext">
+                    Below is the explained <code class="code">index.mtsp</code> file, hosted alongside this current page.
+                </p>
+                </br>
+
+                <code class="code">#METASPACE_HOST</code></br>
+                <code class="code">#METASPACE_VERSION:1</code></br>
+                <code class="code">#METASPACE_NAME:"Untitled"</code></br>
+                <code class="code">#METASPACE_PREVIEW_PATH:"preview.jpg"</code></br>
+                <code class="code">#METASPACE_3D_PATH:"file.usdz"</code></br>
+
+                <div class="padborder">
+                    <p class="bodytext" style="color:#525252">
+                        <code class="code">#METASPACE_HOST</code> - must be present<br>
+                        <code class="code">#METASPACE_VERSION</code> - mtsp version number<br>
+                        <code class="code">#METASPACE_NAME</code> - name of experience<br>
+                        <code class="code">#METASPACE_PREVIEW_PATH</code> - relative path to image preview<br>
+                        <code class="code">#METASPACE_3D_PATH</code> - relative path to 3D file<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
