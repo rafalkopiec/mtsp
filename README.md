@@ -30,7 +30,7 @@ Below is an example `index.mtsp` file, generally to be hosted alongside an `inde
 `#METASPACE_3D_PATH` - relative path to 3D file (usdz)
 
 ### Considerations
-    - The .mtsp file format is formatted in a similar way to .m3u8 playlist files.
-    - For v1, these five fields are required.
-    - The preview image should be a `.jpg` for loading efficiency.
-    - The 3D file format should be `.usdz`, as it is natively compatible with all involved XR systems.
+- The .mtsp file format is formatted in a similar way to .m3u8 playlist files.
+- For v1, these five fields are required.
+- The preview image should be a `.jpg` for loading efficiency.
+- The 3D file format should be `.usdz`, as it is natively compatible with all involved XR systems.
