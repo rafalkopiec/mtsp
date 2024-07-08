@@ -6,6 +6,9 @@ By default, a regular web browser navigates to the `index.html` of a website.
 <br>
 A metaspace browser instead responds to the `index.mtsp` if available.
 
+### Demo
+The demo project is hosted here [metaspace.rocks/mtsp/](https://metaspace.rocks/mtsp/)
+
 ### Sample `.mtsp` file
 Below is an example `index.mtsp` file, generally to be hosted alongside an `index.html`.
 
@@ -33,4 +36,4 @@ Below is an example `index.mtsp` file, generally to be hosted alongside an `inde
 - The .mtsp file format is formatted in a similar way to .m3u8 playlist files.
 - For v1, these five fields are required.
 - The preview image should be a `.jpg` for loading efficiency.
-- The 3D file format should be `.usdz`, as it is natively compatible with all involved XR systems.
+- The 3D file format should be `.usdz`, as it is compatible with all involved XR systems.
