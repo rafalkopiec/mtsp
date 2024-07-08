@@ -6,10 +6,10 @@
         <style>
             .subtitle {
                 color: #525252;
-                font-family: verdana;
+                font-family: futura;
             }
             .bodytext {
-                font-family: verdana;
+                font-family: futura;
             }
             .code {
                 font-family: courier;
@@ -17,6 +17,7 @@
             .box {
                 display: flex;
                 justify-content: center;
+                flex-wrap: wrap;
             }
             .pad {
                 padding: 5%;
@@ -27,10 +28,63 @@
                 border-left-style: solid;
                 border-left-width: 1px;
             }
+            .herobox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                max-width: 60%;
+            }
+            .hero {
+                max-width: 60%;
+                pointer-events: none;
+            }
+            .zstack {
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                background-color: rgba(255, 255, 255, 0.4);
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                padding:0.5rem;
+                border-radius:1rem;
+            }
+            .vstack {
+                display: flex;
+                flex-direction: column;
+            }
+            .hstack {
+                display: flex;
+                align-items: center;
+            }
+            .spacer {
+                flex-grow: 1;
+            }
         </style>
     </head>
+
     <body>
         <div class="box">
+            <div class="vstack">
+                <a href="https://metaspace.rocks" style="text-decoration: none">
+                <div class="hstack">
+                    <img src="https://metaspace.rocks/img/metaspace 2024 clear.webp" style="max-height:3rem">
+                    <h3 class="subtitle" style="font-family:futura">
+                        Metaspace
+                    </h3>
+                    <div class="spacer"></div>
+                </div>
+                </a>
+                <div class="zstack">
+                    <img class="hero" src="preview.jpg">
+                    <div class="box" style="padding:1rem">
+                        <div class="zstack">
+                            <grid>
+                            <code class="code">Open this page in a metaspace browser</code>
+                            </grid>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="pad">
                 <h2 class="subtitle">
                     .mtsp
@@ -43,6 +97,7 @@
                 <p class="bodytext">
                     The open standard for the three-dimensional web.
                     <br>
+                    <br>
                     By default, a regular web browser navigates to the <code class="code">index.html</code> of a website.
                     <br>
                     A metaspace browser instead responds to the <code class="code">index.mtsp</code> if available.
@@ -53,15 +108,23 @@
                     Sample index.mtsp file
                 </h3>
                 <p class="bodytext">
-                    Below is the explained <code class="code">index.mtsp</code> file, hosted alongside this current page.
+                    Below is a sample <code class="code">index.mtsp</code> file, hosted alongside this current page.
                 </p>
-                </br>
 
+                <div class="padborder">
+                    <p class="bodytext" style="color:#525252">
                 <code class="code">#METASPACE_HOST</code></br>
                 <code class="code">#METASPACE_VERSION:1</code></br>
                 <code class="code">#METASPACE_NAME:"Untitled"</code></br>
                 <code class="code">#METASPACE_PREVIEW_PATH:"preview.jpg"</code></br>
                 <code class="code">#METASPACE_3D_PATH:"file.usdz"</code></br>
+                </p>
+                </div>
+
+                </br>
+                <h3 class="subtitle">
+                    Content definitions
+                </h3>
 
                 <div class="padborder">
                     <p class="bodytext" style="color:#525252">
@@ -72,6 +135,26 @@
                         <code class="code">#METASPACE_3D_PATH</code> - relative path to 3D file<br>
                     </p>
                 </div>
+
+                </br>
+                <h3 class="subtitle">
+                    Considerations
+                </h3>
+                <ul>
+                    <li class="bodytext">The <code class="code">.mtsp</code> file format is formatted in a similar way to <code class="code">.m3u8</code> playlist files.</li>
+                    <li class="bodytext">For v1, these five fields are required.</li>
+                    <li class="bodytext">The preview image should be a <code class="code">.jpg</code> for loading efficiency.</li>
+                    <li class="bodytext">The 3D file format should be <code class="code">.usdz</code>, as it is compatible with all involved XR systems.</li>
+                </ul>
+
+                <a href="https://github.com/rafalkopiec/mtsp">
+                    <div class="hstack" style="gap:10px">
+                        <img src="https://metaspace.rocks/mtsp/github-mark.svg" style="max-height:2rem">
+                        <p class="bodytext">
+                            Visit GitHub
+                        </p>
+                    </div>
+                </a>
             </div>
         </div>
     </body>
