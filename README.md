@@ -37,3 +37,6 @@ Below is an example `index.mtsp` file, generally to be hosted alongside an `inde
 - For v1, these five fields are required.
 - The preview image should be a `.jpg` for loading efficiency.
 - The 3D file format should be `.usdz`, as it is compatible with all involved XR systems.
+
+### Decoding
+A Swift-based decoder is available as a package here [github.com/rafalkopiec/mtsp-decoder](https://github.com/rafalkopiec/mtsp-decoder).
