@@ -43,3 +43,8 @@ A Swift-based decoder is available as a package here [github.com/rafalkopiec/mts
 
 ### Viewing
 A RealityKit-based Swift `.usdz` viewer is available as a package here [github.com/rafalkopiec/mtsp-viewer](https://github.com/rafalkopiec/mtsp-viewer).
+
+### Building a metaspace browser
+To build a metaspace browser, you need implementations of an `mtsp-decoder` and an `mtsp-viewer`. 
+
+Feel free to use my open-source packages to give you a head start, or you can roll on your own.
