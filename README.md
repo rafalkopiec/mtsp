@@ -40,3 +40,6 @@ Below is an example `index.mtsp` file, generally to be hosted alongside an `inde
 
 ### Decoding
 A Swift-based decoder is available as a package here [github.com/rafalkopiec/mtsp-decoder](https://github.com/rafalkopiec/mtsp-decoder).
+
+### Viewing
+A RealityKit-based Swift `.usdz` viewer is available as a package here [github.com/rafalkopiec/mtsp-viewer](https://github.com/rafalkopiec/mtsp-viewer).
