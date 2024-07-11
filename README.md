@@ -13,14 +13,23 @@ The demo project is hosted here [metaspace.rocks/mtsp/](https://metaspace.rocks/
 Below is an example `index.mtsp` file, generally to be hosted alongside an `index.html`.
 
 ```
+/// Required
 #METASPACE_HOST
 #METASPACE_VERSION:1
 #METASPACE_NAME:"Untitled"
 #METASPACE_PREVIEW_PATH:"preview.jpg"
 #METASPACE_3D_PATH:"file.usdz"
+
+/// Navigation
+#METASPACE_NAVIGATION:"red_box" -> "red_box/index.mtsp"
+#METASPACE_NAVIGATION:"yellow_box" -> "yellow_box/index.mtsp"
+#METASPACE_NAVIGATION:"green_box" -> "green_box/index.mtsp"
+#METASPACE_NAVIGATION:"home_box" -> "../index.mtsp"
+#METASPACE_NAVIGATION:"root_box" -> "../../index.mtsp"
 ```
 
 ### Content definitions
+#### Required
 
 `#METASPACE_HOST` - must be present
 
@@ -31,6 +40,11 @@ Below is an example `index.mtsp` file, generally to be hosted alongside an `inde
 `#METASPACE_PREVIEW_PATH` - relative path to image preview
 
 `#METASPACE_3D_PATH` - relative path to 3D file (usdz)
+
+#### Optional
+
+`#METASPACE_NAVIGATION` - a string containing an entity name in quotes, an arrow, and a relative path to another `.mtsp` file. There can be an infinite or zero amount of these lines. The goal here is that the user would tap on an entity in a metaspace browser, and the browser would take them to the resolved URL provided by a metaspace decoder.
+
 
 ### Considerations
 - The .mtsp file format is formatted in a similar way to .m3u8 playlist files.
